@@ -1,7 +1,7 @@
 # Rakenne
 
 ## Tietokantakaavio
-![Tietokantataulut](https://github.com/juliapalorinne/ohtu/viikko3/LoginCucumber/documentation/tietokantataulut.jpg)
+![Tietokantataulut](https://github.com/juliapalorinne/ohtu/blob/main/viikko3/LoginCucumber/documentation/UML.jpg)
 
 ### Koodi:
 
