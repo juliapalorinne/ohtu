@@ -25,10 +25,28 @@ public class Stepdefs {
         inputLines = new ArrayList<>();      
     }
     
+    @Given("^command new is selected$")
+    public void commandNewSelected() throws Throwable {
+        inputLines.add("new");
+    }
+    
     @Given("^command login is selected$")
     public void commandLoginSelected() throws Throwable {
         inputLines.add("login");
     }
+    
+    @Given("user {string} with password {string} is created")
+    public void userIsCreated(String username, String password) {
+       inputLines.add("new");
+       inputLines.add(username);
+       inputLines.add(password);
+       
+       io = new StubIO(inputLines); 
+       app = new App(io, auth);
+       app.run();
+    }    
+    
+    
 
     @When("username {string} and password {string} are entered")
     public void usernameAndPasswordAreEntered(String username, String password) {
@@ -39,6 +57,7 @@ public class Stepdefs {
        app = new App(io, auth);
        app.run();
     }    
+    
     
     @Then("system will respond with {string}")
     public void systemWillRespondWith(String expectedOutput) {
