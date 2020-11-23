@@ -24,7 +24,7 @@ public class TennisGame {
 
     public String getScore() {
         if (score1 == score2)
-            return tie();
+            return tieToString();
         
         if (score1 >= 4 || score2 >= 4)
             return moreThanFourPoints();
@@ -33,7 +33,7 @@ public class TennisGame {
     }
     
     
-    public String tie() {        
+    public String tieToString() {        
         if (score1 == 0)
             return "Love-All";
          if (score1 == 1)
