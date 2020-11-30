@@ -42,5 +42,7 @@ public class Nollaa extends Komento {
     public void peru() {
         syotekentta.setText("");
         tuloskentta.setText("" + edellinen);
+        sovellus.asetaTulos(edellinen);
+        undo.disableProperty().set(true); 
     }
 }

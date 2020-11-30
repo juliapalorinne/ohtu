@@ -41,5 +41,7 @@ public class Summa extends Komento {
     public void peru() {
         syotekentta.setText("");
         tuloskentta.setText("" + edellinen);
+        sovellus.asetaTulos(edellinen);
+        undo.disableProperty().set(true);         
     }
 }
