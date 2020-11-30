@@ -1,8 +1,0 @@
-ohtu/GraafinenLaskin.java
- ohtu.GraafinenLaskin
-ohtu/Main.java
- ohtu.Main
-ohtu/Tapahtumankuuntelija.java
- ohtu.Tapahtumankuuntelija
-ohtu/Sovelluslogiikka.java
- ohtu.Sovelluslogiikka
