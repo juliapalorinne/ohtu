@@ -44,21 +44,20 @@ public class Main {
             System.out.println( player );
         }        
         
-        System.out.println("Matcher 3:");
-        Matcher m3 = new And(new PlaysIn("EDM"), 
-                new HasAtLeast(40, "points")                      
-        );
-        for (Player player : stats.matches(m3)) {
-            System.out.println( player );
-        } 
-        
-        System.out.println("Matcher 4:");
-        Matcher m4 = query.oneOf(m1, m3).build();
-        for (Player player : stats.matches(m4)) {
-            System.out.println( player );
-        }  
-        
-        
+//        System.out.println("Matcher 3:");
+//        Matcher m3 = new And(new PlaysIn("EDM"), 
+//                new HasAtLeast(40, "points")                      
+//        );
+//        for (Player player : stats.matches(m3)) {
+//            System.out.println( player );
+//        } 
+//        
+//        System.out.println("Matcher 4:");
+//        Matcher m4 = query.oneOf(m1, m3).build();
+//        for (Player player : stats.matches(m4)) {
+//            System.out.println( player );
+//        }  
+//      
         
         
 //        System.out.println("Matcher 1:");
