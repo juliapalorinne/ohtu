@@ -1,9 +1,9 @@
 
 package ohtu.kivipaperisakset;
 
-// "Muistava teko√§ly"
+// "Muistava teko‰ly"
 
-public class TekoalyParannettu {
+public class TekoalyParannettu implements TekoalyIF {
   private String[] muisti;
   private int vapaaMuistiIndeksi;
 
@@ -12,8 +12,10 @@ public class TekoalyParannettu {
     vapaaMuistiIndeksi = 0;
   }
   
+  
+  @Override
   public void asetaSiirto(String siirto) {
-    // jos muisti t√§yttyy, unohdetaan viimeinen alkio
+    // jos muisti t‰yttyy, unohdetaan viimeinen alkio
     if(vapaaMuistiIndeksi == muisti.length) {
       for(int i = 1; i < muisti.length; i++) {
         muisti[i-1] = muisti[i];
@@ -27,6 +29,7 @@ public class TekoalyParannettu {
   }
 
   
+  @Override
   public String annaSiirto() {
     if(vapaaMuistiIndeksi == 0 || vapaaMuistiIndeksi == 1) {
       return "k";
@@ -56,8 +59,8 @@ public class TekoalyParannettu {
     }
     
     
-    // Tehd√§√§n siirron valinta esimerkiksi seuraavasti;
-    // - jos kivi√§ eniten, annetaan aina paperi
+    // Tehd‰‰n siirron valinta esimerkiksi seuraavasti;
+    // - jos kivi‰ eniten, annetaan aina paperi
     // - jos papereita eniten, annetaan aina sakset
     // muulloin annetaan aina kivi
     if(k > p && k > s) {
@@ -70,7 +73,7 @@ public class TekoalyParannettu {
       return "k";
     }
     
-    // Tehokkaampiakin tapoja l√∂ytyy, mutta niist√§ lis√§√§ 
-    // Johdatus Teko√§lyyn kurssilla!
+    // Tehokkaampiakin tapoja lˆytyy, mutta niist‰ lis‰‰ 
+    // Johdatus Teko‰lyyn kurssilla!
   }
 }
